@@ -79,6 +79,7 @@ function myUpperCase(string) {
       upperCaseString += string[i];
     }
   }
+  return upperCaseString;
 }
 
 myUpperCase("Hello World");

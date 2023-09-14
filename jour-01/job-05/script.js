@@ -13,6 +13,7 @@ function myPrimeList(limit) {
       primeList[index] = number;
       index++;
     }
+    return primeList;
   }
 }
 
