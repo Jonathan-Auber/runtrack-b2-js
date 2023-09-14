@@ -1,4 +1,7 @@
 function myIsInString(haystack, needle) {
+  let haystackLength;
+  let needleLength;
+
   for (
     haystackLength = 0;
     haystack[haystackLength] !== undefined;
@@ -6,16 +9,15 @@ function myIsInString(haystack, needle) {
   );
   for (needleLength = 0; needle[needleLength] !== undefined; needleLength++);
 
-  for (i = 0; i <= haystackLength - needleLength; i++) {
+  for (let i = 0; i <= haystackLength - needleLength; i++) {
     let strChar = "";
-    for (l = 0; l < needleLength; l++) {
+    for (let l = 0; l < needleLength; l++) {
       strChar += haystack[i + l];
     }
     if (needle === strChar) {
       return true;
     }
   }
-
   return false;
 }
 

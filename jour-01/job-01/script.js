@@ -59,15 +59,15 @@ function myUpperCase(string) {
   let length = 0;
   let upperCaseString = "";
 
-  for (i = 0; string[i] !== undefined; i++) {
+  for (let i = 0; string[i] !== undefined; i++) {
     length++;
   }
 
-  for (i = 0; i < length; i++) {
+  for (let i = 0; i < length; i++) {
     if (string[i] >= "a" && string[i] <= "z") {
       letter = string[i];
 
-      for (l = -1; letter !== lowerCase[l]; l++) {
+      for (let l = -1; letter !== lowerCase[l]; l++) {
         if (letter === lowerCase[l + 1]) {
           upperCaseString += upperCase[l + 1];
           break;
